@@ -1,0 +1,1840 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nohann Joseph - Développeur Web</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="font-sans" id="top">
+    <!-- Sidebar -->
+    <nav
+      class="fixed left-0 top-0 h-full w-[60px] bg-dark-800 border-r border-gray-700 flex flex-col items-center py-6 z-50"
+    >
+      <div class="mb-8">
+        <div
+          class="text-white font-heading text-2xl font-extrabold tracking-wide"
+        >
+          <i class="ri-robot-line"></i>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-between h-[calc(100vh-200px)]"
+      >
+        <a
+          href="#accueil"
+          class="text-gray-400 hover:text-white transition-colors relative group"
+        >
+          <i class="ri-home-4-line text-xl"></i>
+          <span
+            class="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-dark-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+          >
+            Accueil
+            <i class="ri-arrow-right-s-line align-middle"></i>
+          </span>
+        </a>
+        <a
+          href="#parcours"
+          class="text-gray-400 hover:text-white transition-colors relative group"
+        >
+          <i class="ri-graduation-cap-line text-xl"></i>
+          <span
+            class="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-dark-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+          >
+            Parcours
+            <i class="ri-arrow-right-s-line align-middle"></i>
+          </span>
+        </a>
+        <a
+          href="#stages"
+          class="text-gray-400 hover:text-white transition-colors relative group"
+        >
+          <i class="ri-briefcase-line text-xl"></i>
+          <span
+            class="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-dark-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+          >
+            Stages
+            <i class="ri-arrow-right-s-line align-middle"></i>
+          </span>
+        </a>
+        <a
+          href="#competences"
+          class="text-gray-400 hover:text-white transition-colors relative group"
+        >
+          <i class="ri-tools-line text-xl"></i>
+          <span
+            class="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-dark-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+          >
+            Compétences
+            <i class="ri-arrow-right-s-line align-middle"></i>
+          </span>
+        </a>
+        <a
+          href="#projets"
+          class="text-gray-400 hover:text-white transition-colors relative group"
+        >
+          <i class="ri-folder-2-line text-xl"></i>
+          <span
+            class="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-dark-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+          >
+            Projets
+            <i class="ri-arrow-right-s-line align-middle"></i>
+          </span>
+        </a>
+        <a
+          href="#veille"
+          class="text-gray-400 hover:text-white transition-colors relative group"
+        >
+          <i class="ri-eye-line text-xl"></i>
+          <span
+            class="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-dark-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+          >
+            Veille
+            <i class="ri-arrow-right-s-line align-middle"></i>
+          </span>
+        </a>
+        <a
+          href="#contact"
+          class="text-gray-400 hover:text-white transition-colors relative group"
+        >
+          <i class="ri-mail-line text-xl"></i>
+          <span
+            class="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-dark-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+          >
+            Contact
+            <i class="ri-arrow-right-s-line align-middle"></i>
+          </span>
+        </a>
+      </div>
+      <div class="mt-auto">
+        <a
+          href="https://github.com/NOH-code"
+          target="_blank"
+          class="text-gray-400 hover:text-white transition-colors relative group"
+        >
+          <i class="ri-github-line text-xl"></i>
+          <span
+            class="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 bg-dark-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+          >
+            GitHub
+            <i class="ri-arrow-right-s-line align-middle"></i>
+          </span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="accueil"
+      class="min-h-screen flex items-center justify-center px-4 py-16"
+    >
+      <div class="max-w-4xl w-full text-center">
+        <div class="mb-8 flex justify-center">
+          <div
+            class="w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 border-4 border-primary flex items-center justify-center overflow-hidden"
+          >
+            <span class="text-4xl font-heading text-gray-400 dark:text-gray-500"
+              >NJ</span
+            >
+          </div>
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-heading font-extrabold mb-4">
+          Nohann Joseph
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
+          Développeur Web & Passionné d'IA
+        </p>
+        <p
+          class="text-lg text-gray-500 dark:text-gray-400 mb-8 max-w-2xl mx-auto"
+        >
+          Étudiant en BTS SIO option SLAM, je développe des solutions
+          informatiques innovantes et modernes. Passionné par l'intelligence
+          artificielle et les nouvelles technologies.
+        </p>
+
+        <!-- Quick Info Cards -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto"
+        >
+          <div class="bg-gray-50 dark:bg-dark-800 p-6 rounded-lg">
+            <i class="ri-graduation-cap-line text-2xl text-primary mb-2"></i>
+            <h3 class="font-semibold mb-1">Formation</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">BTS SIO SLAM</p>
+          </div>
+          <div class="bg-gray-50 dark:bg-dark-800 p-6 rounded-lg">
+            <i class="ri-code-line text-2xl text-primary mb-2"></i>
+            <h3 class="font-semibold mb-1">Spécialité</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Solutions Logicielles
+            </p>
+          </div>
+          <div class="bg-gray-50 dark:bg-dark-800 p-6 rounded-lg">
+            <i class="ri-map-pin-line text-2xl text-primary mb-2"></i>
+            <h3 class="font-semibold mb-1">Localisation</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Île-de-France
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 mb-12">
+          <a
+            href="https://linkedin.com/in/nohann-joseph"
+            target="_blank"
+            class="social-link flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-primary hover:text-white transition-colors"
+          >
+            <i class="ri-linkedin-fill text-xl"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="tel:+33743534990"
+            class="social-link flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-primary hover:text-white transition-colors"
+          >
+            <i class="ri-phone-fill text-xl"></i>
+            <span>Téléphone</span>
+          </a>
+          <a
+            href="mailto:nohjoseph.nj@gmail.com"
+            class="social-link flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-primary hover:text-white transition-colors"
+          >
+            <i class="ri-mail-fill text-xl"></i>
+            <span>Email</span>
+          </a>
+        </div>
+
+        <div class="animate-bounce mt-16">
+          <a
+            href="#parcours"
+            class="inline-block p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-primary hover:text-white transition-colors"
+          >
+            <i class="ri-arrow-down-s-line text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section id="parcours" class="py-20 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-heading font-bold text-center mb-16"
+        >
+          Parcours
+        </h2>
+
+        <!-- Scolarité -->
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold mb-8 flex items-center">
+            <i class="ri-graduation-cap-line text-primary mr-3"></i>
+            Scolarité
+          </h3>
+
+          <div class="space-y-8">
+            <!-- BTS SIO -->
+            <div class="card p-8 rounded-xl">
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between mb-4"
+              >
+                <div>
+                  <h4 class="text-xl font-bold mb-2">
+                    BTS Services Informatiques aux Organisations
+                  </h4>
+                  <p class="text-primary font-medium">
+                    Option SLAM - Solutions Logicielles et Applications Métiers
+                  </p>
+                </div>
+                <div class="mt-2 md:mt-0">
+                  <span
+                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm"
+                    >2023 - 2025</span
+                  >
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">
+                Formation spécialisée dans le développement de solutions
+                logicielles, la gestion de données et les services
+                informatiques. Acquisition de compétences en développement web,
+                bases de données, réseaux et sécurité informatique.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 text-sm bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-full"
+                  >HTML/CSS</span
+                >
+                <span
+                  class="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded-full"
+                  >PHP</span
+                >
+                <span
+                  class="px-3 py-1 text-sm bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded-full"
+                  >SQL</span
+                >
+              </div>
+            </div>
+
+            <!-- Baccalauréat -->
+            <div class="card p-8 rounded-xl">
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between mb-4"
+              >
+                <div>
+                  <h4 class="text-xl font-bold mb-2">Baccalauréat Général</h4>
+                  <p class="text-primary font-medium">
+                    Série Scientifique - Spécialité Mathématiques
+                  </p>
+                </div>
+                <div class="mt-2 md:mt-0">
+                  <span
+                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm"
+                    >2020 - 2023</span
+                  >
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400">
+                Parcours scientifique avec un focus sur les mathématiques
+                avancées et les sciences physiques. Développement de la logique
+                analytique et des capacités de résolution de problèmes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expériences Professionnelles -->
+        <div>
+          <h3 class="text-2xl font-bold mb-8 flex items-center">
+            <i class="ri-briefcase-line text-primary mr-3"></i>
+            Expériences Professionnelles
+          </h3>
+
+          <div class="space-y-8">
+            <!-- Stage Développement Web -->
+            <div class="card p-8 rounded-xl">
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between mb-4"
+              >
+                <div>
+                  <h4 class="text-xl font-bold mb-2">
+                    Développeur Web Junior - Stage
+                  </h4>
+                  <p class="text-primary font-medium">
+                    Entreprise fictive - Projet pédagogique
+                  </p>
+                </div>
+                <div class="mt-2 md:mt-0">
+                  <span
+                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-full text-sm"
+                    >2024</span
+                  >
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">
+                Développement d'une application web de gestion de projets en
+                équipe. Participation à toutes les phases du projet : analyse
+                des besoins, conception, développement, tests et déploiement.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 text-sm bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-full"
+                  >Node.js</span
+                >
+                <span
+                  class="px-3 py-1 text-sm bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 rounded-full"
+                  >MongoDB</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stages Section -->
+    <section id="stages" class="py-20 px-4 bg-gray-50 dark:bg-dark-800">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-heading font-bold text-center mb-16"
+        >
+          Stages
+        </h2>
+
+        <div class="space-y-12">
+          <!-- Stage 1 -->
+          <div class="card p-8 rounded-xl">
+            <div class="flex flex-col lg:flex-row gap-8">
+              <div class="lg:w-2/3">
+                <div
+                  class="flex flex-col md:flex-row md:items-center justify-between mb-6"
+                >
+                  <div>
+                    <h3 class="text-2xl font-bold mb-2">
+                      Stage Développeur Full-Stack
+                    </h3>
+                    <p class="text-primary font-medium">
+                      Entreprise Tech Solutions - 8 semaines
+                    </p>
+                  </div>
+                  <div class="mt-2 md:mt-0">
+                    <span
+                      class="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full"
+                      >Avril - Juin 2024</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Mission -->
+                <div class="mb-8">
+                  <h4 class="text-lg font-semibold mb-4 flex items-center">
+                    <i class="ri-target-line text-primary mr-2"></i>
+                    Mission
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-400 mb-4">
+                    Développement d'une plateforme de gestion de projets
+                    collaborative pour une équipe de 15 développeurs.
+                    Intégration de fonctionnalités de suivi temps réel, gestion
+                    documentaire et communication interne.
+                  </p>
+                </div>
+
+                <!-- Réalisations -->
+                <div class="mb-8">
+                  <h4 class="text-lg font-semibold mb-4 flex items-center">
+                    <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                    Réalisations
+                  </h4>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start">
+                      <i class="ri-check-line text-green-500 mr-2 mt-1"></i>
+                      <span class="text-gray-600 dark:text-gray-400"
+                        >Conception et développement de l'API REST</span
+                      >
+                    </div>
+                    <div class="flex items-start">
+                      <i class="ri-check-line text-green-500 mr-2 mt-1"></i>
+                      <span class="text-gray-600 dark:text-gray-400"
+                        >Interface utilisateur responsive</span
+                      >
+                    </div>
+                    <div class="flex items-start">
+                      <i class="ri-check-line text-green-500 mr-2 mt-1"></i>
+                      <span class="text-gray-600 dark:text-gray-400"
+                        >Intégration WebSocket pour temps réel</span
+                      >
+                    </div>
+                    <div class="flex items-start">
+                      <i class="ri-check-line text-green-500 mr-2 mt-1"></i>
+                      <span class="text-gray-600 dark:text-gray-400"
+                        >Tests unitaires et d'intégration</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Technologies -->
+                <div>
+                  <h4 class="text-lg font-semibold mb-4 flex items-center">
+                    <i class="ri-code-line text-primary mr-2"></i>
+                    Technologies Utilisées
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full"
+                      >React</span
+                    >
+                    <span
+                      class="px-3 py-1 text-sm bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-full"
+                      >Node.js</span
+                    >
+                    <span
+                      class="px-3 py-1 text-sm bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 rounded-full"
+                      >MongoDB</span
+                    >
+                    <span
+                      class="px-3 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded-full"
+                      >Socket.io</span
+                    >
+                    <span
+                      class="px-3 py-1 text-sm bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 rounded-full"
+                      >TypeScript</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:w-1/3">
+                <div class="bg-gray-50 dark:bg-dark-700 p-6 rounded-lg">
+                  <h4 class="font-semibold mb-4">Compétences Développées</h4>
+                  <div class="space-y-3">
+                    <div class="flex items-center">
+                      <i class="ri-star-line text-yellow-500 mr-2"></i>
+                      <span class="text-sm">Travail en équipe</span>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="ri-star-line text-yellow-500 mr-2"></i>
+                      <span class="text-sm">Méthode Agile</span>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="ri-star-line text-yellow-500 mr-2"></i>
+                      <span class="text-sm">Gestion de projet</span>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="ri-star-line text-yellow-500 mr-2"></i>
+                      <span class="text-sm">Communication</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="card p-8 rounded-xl">
+            <div class="flex flex-col lg:flex-row gap-8">
+              <div class="lg:w-2/3">
+                <div
+                  class="flex flex-col md:flex-row md:items-center justify-between mb-6"
+                >
+                  <div>
+                    <h3 class="text-2xl font-bold mb-2">
+                      Stage Analyste Programmeur
+                    </h3>
+                    <p class="text-primary font-medium">
+                      Startup DataTech - 6 semaines
+                    </p>
+                  </div>
+                  <div class="mt-2 md:mt-0">
+                    <span
+                      class="px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-full"
+                      >Janvier - Février 2024</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Mission -->
+                <div class="mb-8">
+                  <h4 class="text-lg font-semibold mb-4 flex items-center">
+                    <i class="ri-target-line text-primary mr-2"></i>
+                    Mission
+                  </h4>
+                  <p class="text-gray-600 dark:text-gray-400 mb-4">
+                    Analyse et optimisation des processus métier existants.
+                    Développement d'outils d'automatisation pour améliorer
+                    l'efficacité opérationnelle d'une plateforme e-commerce.
+                  </p>
+                </div>
+
+                <!-- Réalisations -->
+                <div class="mb-8">
+                  <h4 class="text-lg font-semibold mb-4 flex items-center">
+                    <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+                    Réalisations
+                  </h4>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start">
+                      <i class="ri-check-line text-green-500 mr-2 mt-1"></i>
+                      <span class="text-gray-600 dark:text-gray-400"
+                        >Audit du système existant</span
+                      >
+                    </div>
+                    <div class="flex items-start">
+                      <i class="ri-check-line text-green-500 mr-2 mt-1"></i>
+                      <span class="text-gray-600 dark:text-gray-400"
+                        >Scripts d'automatisation Python</span
+                      >
+                    </div>
+                    <div class="flex items-start">
+                      <i class="ri-check-line text-green-500 mr-2 mt-1"></i>
+                      <span class="text-gray-600 dark:text-gray-400"
+                        >Tableaux de bord analytics</span
+                      >
+                    </div>
+                    <div class="flex items-start">
+                      <i class="ri-check-line text-green-500 mr-2 mt-1"></i>
+                      <span class="text-gray-600 dark:text-gray-400"
+                        >Documentation technique</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Technologies -->
+                <div>
+                  <h4 class="text-lg font-semibold mb-4 flex items-center">
+                    <i class="ri-code-line text-primary mr-2"></i>
+                    Technologies Utilisées
+                  </h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full"
+                      >Python</span
+                    >
+                    <span
+                      class="px-3 py-1 text-sm bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded-full"
+                      >Pandas</span
+                    >
+                    <span
+                      class="px-3 py-1 text-sm bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-full"
+                      >PostgreSQL</span
+                    >
+                    <span
+                      class="px-3 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded-full"
+                      >Power BI</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:w-1/3">
+                <div class="bg-gray-50 dark:bg-dark-700 p-6 rounded-lg">
+                  <h4 class="font-semibold mb-4">Apprentissages Clés</h4>
+                  <div class="space-y-3">
+                    <div class="flex items-center">
+                      <i class="ri-lightbulb-line text-yellow-500 mr-2"></i>
+                      <span class="text-sm">Analyse métier</span>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="ri-lightbulb-line text-yellow-500 mr-2"></i>
+                      <span class="text-sm">Automatisation</span>
+                    </div>
+                    <div class="flex items-center">
+                      <i class="ri-lightbulb-line text-yellow-500 mr-2"></i>
+                      <span class="text-sm">Data visualisation</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section id="competences" class="py-20 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-heading font-bold text-center mb-16"
+        >
+          Compétences
+        </h2>
+
+        <!-- Langages de Programmation -->
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold mb-8 flex items-center">
+            <i class="ri-code-line text-primary mr-3"></i>
+            Langages de Programmation
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card p-6 rounded-xl text-center">
+              <div
+                class="skill-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400"
+              >
+                <i class="ri-braces-line text-xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">Python</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                Backend, IA, Data Science
+              </p>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div
+                  class="bg-blue-600 h-2 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="card p-6 rounded-xl text-center">
+              <div
+                class="skill-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400"
+              >
+                <i class="ri-javascript-line text-xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">JavaScript</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                Frontend, Node.js
+              </p>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div
+                  class="bg-yellow-600 h-2 rounded-full"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="card p-6 rounded-xl text-center">
+              <div
+                class="skill-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400"
+              >
+                <i class="ri-database-2-line text-xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">SQL</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                Bases de données
+              </p>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div
+                  class="bg-red-600 h-2 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="card p-6 rounded-xl text-center">
+              <div
+                class="skill-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400"
+              >
+                <i class="ri-markup-line text-xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">HTML/CSS</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                Structure et style web
+              </p>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div
+                  class="bg-purple-600 h-2 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold mb-8 flex items-center">
+            <i class="ri-tools-line text-primary mr-3"></i>
+            Frameworks & Libraries
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card p-6 rounded-xl text-center">
+              <div
+                class="skill-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400"
+              >
+                <i class="ri-reactjs-line text-xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">React</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                Développement frontend
+              </p>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div
+                  class="bg-cyan-600 h-2 rounded-full"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="card p-6 rounded-xl text-center">
+              <div
+                class="skill-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400"
+              >
+                <i class="ri-nodejs-line text-xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">Node.js</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                Runtime JavaScript
+              </p>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div
+                  class="bg-green-600 h-2 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="card p-6 rounded-xl text-center">
+              <div
+                class="skill-icon w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400"
+              >
+                <i class="ri-tailwind-css-line text-xl"></i>
+              </div>
+              <h4 class="font-bold mb-2">Tailwind CSS</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                Framework CSS
+              </p>
+              <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div
+                  class="bg-orange-600 h-2 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outils & Technologies -->
+        <div>
+          <h3 class="text-2xl font-bold mb-8 flex items-center">
+            <i class="ri-settings-line text-primary mr-3"></i>
+            Outils & Technologies
+          </h3>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div
+              class="flex items-center p-3 bg-gray-50 dark:bg-dark-800 rounded-lg"
+            >
+              <i class="ri-git-branch-line text-primary mr-2"></i>
+              <span class="text-sm font-medium">Git</span>
+            </div>
+            <div
+              class="flex items-center p-3 bg-gray-50 dark:bg-dark-800 rounded-lg"
+            >
+              <i class="ri-github-line text-primary mr-2"></i>
+              <span class="text-sm font-medium">GitHub</span>
+            </div>
+            <div
+              class="flex items-center p-3 bg-gray-50 dark:bg-dark-800 rounded-lg"
+            >
+              <i class="ri-vscode-line text-primary mr-2"></i>
+              <span class="text-sm font-medium">VS Code</span>
+            </div>
+            <div
+              class="flex items-center p-3 bg-gray-50 dark:bg-dark-800 rounded-lg"
+            >
+              <i class="ri-database-line text-primary mr-2"></i>
+              <span class="text-sm font-medium">MySQL</span>
+            </div>
+            <div
+              class="flex items-center p-3 bg-gray-50 dark:bg-dark-800 rounded-lg"
+            >
+              <i class="ri-robot-line text-primary mr-2"></i>
+              <span class="text-sm font-medium">IA/ML</span>
+            </div>
+            <div
+              class="flex items-center p-3 bg-gray-50 dark:bg-dark-800 rounded-lg"
+            >
+              <i class="ri-cloud-line text-primary mr-2"></i>
+              <span class="text-sm font-medium">Cloud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="py-20 px-4 bg-gray-50 dark:bg-dark-800">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-heading font-bold text-center mb-16"
+        >
+          Projets
+        </h2>
+
+        <!-- Intelligence Artificielle -->
+        <div class="mb-20">
+          <h3 class="text-2xl font-bold mb-8 flex items-center">
+            <i class="ri-robot-line text-primary mr-3"></i>
+            Intelligence Artificielle
+          </h3>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Projet IA 1 -->
+            <div class="card p-8 rounded-xl">
+              <div class="mb-6">
+                <div class="flex items-center justify-between mb-4">
+                  <h4 class="text-xl font-bold">
+                    Modèle de Classification d'Images
+                  </h4>
+                  <span
+                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded-full text-sm"
+                    >Mars 2024</span
+                  >
+                </div>
+
+                <!-- Contexte -->
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Contexte</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Projet académique pour l'apprentissage du machine learning
+                    appliqué à la vision par ordinateur.
+                  </p>
+                </div>
+
+                <!-- Objectifs -->
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Objectifs</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Développer un modèle capable de classifier des images de
+                    vêtements avec une précision > 85%.
+                  </p>
+                </div>
+
+                <!-- Technologies -->
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Environnement</h5>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded"
+                      >Python</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 rounded"
+                      >TensorFlow</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded"
+                      >Keras</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Réalisations -->
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">
+                    Travaux Réalisés
+                  </h5>
+                  <ul
+                    class="text-sm text-gray-600 dark:text-gray-400 space-y-1"
+                  >
+                    <li>
+                      • Collecte et préparation d'un dataset de 10 000 images
+                    </li>
+                    <li>
+                      • Implémentation d'un CNN avec architecture personnalisée
+                    </li>
+                    <li>• Entraînement et optimisation du modèle</li>
+                    <li>
+                      • Évaluation des performances avec métriques détaillées
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Résultats -->
+                <div>
+                  <h5 class="font-semibold text-primary mb-2">Résultats</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                    Précision de 87,3% atteinte, supérieure à l'objectif
+                    initial. Démonstration de l'application pratique du machine
+                    learning.
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A1</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A4</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A5</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet IA 2 -->
+            <div class="card p-8 rounded-xl">
+              <div class="mb-6">
+                <div class="flex items-center justify-between mb-4">
+                  <h4 class="text-xl font-bold">
+                    Chatbot IA pour Support Client
+                  </h4>
+                  <span
+                    class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded-full text-sm"
+                    >Janvier 2024</span
+                  >
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Contexte</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Projet de fin d'année pour automatiser le support client de
+                    première ligne.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Objectifs</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Créer un chatbot capable de répondre aux questions
+                    fréquentes avec traitement du langage naturel.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Environnement</h5>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded"
+                      >Python</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >NLTK</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 rounded"
+                      >Flask</span
+                    >
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">
+                    Travaux Réalisés
+                  </h5>
+                  <ul
+                    class="text-sm text-gray-600 dark:text-gray-400 space-y-1"
+                  >
+                    <li>
+                      • Développement d'un système de compréhension du langage
+                    </li>
+                    <li>• Création d'une base de connaissances structurée</li>
+                    <li>• Interface web pour interaction utilisateur</li>
+                    <li>• Tests et amélioration continue du modèle</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-semibold text-primary mb-2">Résultats</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                    Taux de satisfaction utilisateur de 82%. Réduction du temps
+                    de réponse de 60%.
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A2</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A3</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A5</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="mb-20">
+          <h3 class="text-2xl font-bold mb-8 flex items-center">
+            <i class="ri-palette-line text-primary mr-3"></i>
+            Développement Frontend
+          </h3>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Projet Frontend 1 -->
+            <div class="card p-8 rounded-xl">
+              <div class="mb-6">
+                <div class="flex items-center justify-between mb-4">
+                  <h4 class="text-xl font-bold">
+                    Application de Gestion de Tâches
+                  </h4>
+                  <span
+                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm"
+                    >Décembre 2023</span
+                  >
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Contexte</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Projet personnel pour organiser et suivre les tâches
+                    quotidiennes avec interface moderne.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Objectifs</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Créer une interface utilisateur intuitive et responsive pour
+                    la gestion de tâches personnelles.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Environnement</h5>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-200 rounded"
+                      >React</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded"
+                      >TypeScript</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded"
+                      >Tailwind</span
+                    >
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">
+                    Travaux Réalisés
+                  </h5>
+                  <ul
+                    class="text-sm text-gray-600 dark:text-gray-400 space-y-1"
+                  >
+                    <li>• Conception de l'interface utilisateur avec Figma</li>
+                    <li>• Développement d'un système de drag & drop</li>
+                    <li>• Implémentation du stockage local</li>
+                    <li>• Optimisation pour mobile et desktop</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-semibold text-primary mb-2">Résultats</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                    Application fully fonctionnelle utilisée quotidiennement.
+                    Interface moderne et expérience utilisateur optimale.
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A3</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A4</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet Frontend 2 -->
+            <div class="card p-8 rounded-xl">
+              <div class="mb-6">
+                <div class="flex items-center justify-between mb-4">
+                  <h4 class="text-xl font-bold">Site Vitrine pour Portfolio</h4>
+                  <span
+                    class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full text-sm"
+                    >Novembre 2023</span
+                  >
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Contexte</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Création d'un portfolio professionnel pour présenter mes
+                    compétences et réalisations.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Objectifs</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Développer un site web responsive et moderne respectant les
+                    standards d'accessibilité.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Environnement</h5>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded"
+                      >HTML5</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded"
+                      >CSS3</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded"
+                      >JavaScript</span
+                    >
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">
+                    Travaux Réalisés
+                  </h5>
+                  <ul
+                    class="text-sm text-gray-600 dark:text-gray-400 space-y-1"
+                  >
+                    <li>• Design system et charte graphique</li>
+                    <li>• Développement responsive mobile-first</li>
+                    <li>• Animations et interactions fluides</li>
+                    <li>• Optimisation des performances</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-semibold text-primary mb-2">Résultats</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                    Site web professionnel conforme aux standards. Temps de
+                    chargement optimisé et accessibilité respectée.
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A3</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A6</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div>
+          <h3 class="text-2xl font-bold mb-8 flex items-center">
+            <i class="ri-server-line text-primary mr-3"></i>
+            Développement Backend
+          </h3>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Projet Backend 1 -->
+            <div class="card p-8 rounded-xl">
+              <div class="mb-6">
+                <div class="flex items-center justify-between mb-4">
+                  <h4 class="text-xl font-bold">
+                    API REST pour Gestion de Stock
+                  </h4>
+                  <span
+                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-full text-sm"
+                    >Octobre 2023</span
+                  >
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Contexte</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Projet de cours pour apprendre le développement d'APIs
+                    RESTful et la gestion de bases de données.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Objectifs</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Concevoir une API robuste pour la gestion de stocks avec
+                    authentification et autorisation.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Environnement</h5>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >Node.js</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded"
+                      >Express</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded"
+                      >MongoDB</span
+                    >
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">
+                    Travaux Réalisés
+                  </h5>
+                  <ul
+                    class="text-sm text-gray-600 dark:text-gray-400 space-y-1"
+                  >
+                    <li>• Modélisation de la base de données</li>
+                    <li>• Développement des endpoints CRUD</li>
+                    <li>• Implémentation de l'authentification JWT</li>
+                    <li>• Documentation avec Swagger</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-semibold text-primary mb-2">Résultats</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                    API fonctionnelle avec 15 endpoints. Tests d'intégration
+                    réussis et documentation complète.
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A1</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A2</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A5</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet Backend 2 -->
+            <div class="card p-8 rounded-xl">
+              <div class="mb-6">
+                <div class="flex items-center justify-between mb-4">
+                  <h4 class="text-xl font-bold">
+                    Système de Gestion Documentaire
+                  </h4>
+                  <span
+                    class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-full text-sm"
+                    >Septembre 2023</span
+                  >
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Contexte</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Projet collaboratif pour créer un système de gestion
+                    documentaire pour une entreprise fictive.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Objectifs</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Développer une plateforme sécurisée de stockage, partage et
+                    gestion de documents.
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">Environnement</h5>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded"
+                      >PHP</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 rounded"
+                      >MySQL</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-900/30 text-gray-800 dark:text-gray-200 rounded"
+                      >Apache</span
+                    >
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <h5 class="font-semibold text-primary mb-2">
+                    Travaux Réalisés
+                  </h5>
+                  <ul
+                    class="text-sm text-gray-600 dark:text-gray-400 space-y-1"
+                  >
+                    <li>• Analyse des besoins et conception UML</li>
+                    <li>• Développement du backend PHP orienté objet</li>
+                    <li>
+                      • Système de gestion des utilisateurs et permissions
+                    </li>
+                    <li>• Interface d'administration complète</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h5 class="font-semibold text-primary mb-2">Résultats</h5>
+                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                    Plateforme opérationnelle supportant 100+ utilisateurs
+                    simultanés avec gestion fine des accès.
+                  </p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A1</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A4</span
+                    >
+                    <span
+                      class="px-2 py-1 text-xs bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded"
+                      >A5</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Veille Technologique Section -->
+    <section id="veille" class="py-20 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-heading font-bold text-center mb-16"
+        >
+          Veille Technologique
+        </h2>
+
+        <!-- Rapport de Veille -->
+        <div class="card p-8 rounded-xl mb-12">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- En-tête du rapport -->
+            <div class="lg:col-span-3">
+              <h3 class="text-2xl font-bold mb-6 flex items-center">
+                <i class="ri-eye-line text-primary mr-3"></i>
+                Rapport de Veille : Intelligence Artificielle et Développement
+                Web
+              </h3>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gray-50 dark:bg-dark-800 p-4 rounded-lg">
+                  <h4 class="font-semibold mb-2">Thématique</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Évolution de l'IA générative et son impact sur le
+                    développement web
+                  </p>
+                </div>
+                <div class="bg-gray-50 dark:bg-dark-800 p-4 rounded-lg">
+                  <h4 class="font-semibold mb-2">Méthodologie</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Veille quotidienne via RSS, newsletters et réseaux sociaux
+                    professionnels
+                  </p>
+                </div>
+                <div class="bg-gray-50 dark:bg-dark-800 p-4 rounded-lg">
+                  <h4 class="font-semibold mb-2">Période</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Septembre 2023 - Mars 2024
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Analyse structurée -->
+            <div class="lg:col-span-2">
+              <h4 class="text-lg font-semibold mb-4 flex items-center">
+                <i class="ri-microscope-line text-primary mr-2"></i>
+                Analyse Structurée
+              </h4>
+
+              <div class="space-y-6">
+                <!-- Introduction -->
+                <div>
+                  <h5 class="font-semibold text-primary mb-2">Introduction</h5>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    L'année 2023-2024 marque une accélération significative dans
+                    le domaine de l'intelligence artificielle générative. Cette
+                    veille examine l'impact de ces avancées sur les pratiques de
+                    développement web et les défis à relever.
+                  </p>
+                </div>
+
+                <!-- Développements majeurs -->
+                <div>
+                  <h5 class="font-semibold text-primary mb-2">
+                    Développements Majeurs
+                  </h5>
+                  <div
+                    class="space-y-3 text-sm text-gray-600 dark:text-gray-400"
+                  >
+                    <div class="flex items-start">
+                      <i class="ri-star-line text-yellow-500 mr-2 mt-0.5"></i>
+                      <div>
+                        <strong>GPT-4 et modèles équivalents :</strong>
+                        Amélioration significative des capacités de
+                        compréhension et génération de code.
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <i class="ri-star-line text-yellow-500 mr-2 mt-0.5"></i>
+                      <div>
+                        <strong>Outils de développement assisté :</strong>
+                        GitHub Copilot, ChatGPT pour le développement,
+                        intégration dans les IDE.
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <i class="ri-star-line text-yellow-500 mr-2 mt-0.5"></i>
+                      <div>
+                        <strong>Frameworks web adaptatifs :</strong> Next.js 14,
+                        React Server Components, optimisations automatiques.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Impacts sur le développement -->
+                <div>
+                  <h5 class="font-semibold text-primary mb-2">
+                    Impacts sur le Développement Web
+                  </h5>
+                  <div
+                    class="space-y-3 text-sm text-gray-600 dark:text-gray-400"
+                  >
+                    <div class="flex items-start">
+                      <i
+                        class="ri-trending-up-line text-green-500 mr-2 mt-0.5"
+                      ></i>
+                      <div>
+                        <strong>Productivité :</strong> Réduction du temps de
+                        développement de 30-40% selon les études.
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <i
+                        class="ri-trending-up-line text-green-500 mr-2 mt-0.5"
+                      ></i>
+                      <div>
+                        <strong>Qualité du code :</strong> Meilleures pratiques
+                        suggérées automatiquement.
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <i
+                        class="ri-information-line text-blue-500 mr-2 mt-0.5"
+                      ></i>
+                      <div>
+                        <strong>Défis :</strong> Nécessité de valider le code
+                        généré, questions de propriété intellectuelle.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Synthèse critique -->
+            <div>
+              <h4 class="text-lg font-semibold mb-4 flex items-center">
+                <i class="ri-lightbulb-line text-primary mr-2"></i>
+                Synthèse Critique
+              </h4>
+
+              <div class="bg-gray-50 dark:bg-dark-800 p-6 rounded-lg">
+                <h5 class="font-semibold mb-3">
+                  Enjeux pour les Services Informatiques
+                </h5>
+
+                <div class="space-y-4 text-sm text-gray-600 dark:text-gray-400">
+                  <div>
+                    <strong>Formation continue :</strong> Les équipes doivent
+                    être formées aux nouveaux outils IA pour rester
+                    compétitives.
+                  </div>
+
+                  <div>
+                    <strong>Évolution des métiers :</strong> Le rôle du
+                    développeur évolue vers plus de conception et de validation
+                    plutôt que de codage pur.
+                  </div>
+
+                  <div>
+                    <strong>Sécurité et éthique :</strong> Nécessité de
+                    politiques claires sur l'utilisation de l'IA dans le
+                    développement.
+                  </div>
+
+                  <div>
+                    <strong>Opportunités :</strong> L'IA générative ouvre de
+                    nouvelles possibilités pour la personnalisation et
+                    l'innovation rapide.
+                  </div>
+                </div>
+
+                <div
+                  class="mt-6 p-3 bg-blue-50 dark:bg-blue-900/20 rounded border-l-4 border-blue-500"
+                >
+                  <p class="text-sm text-blue-800 dark:text-blue-200">
+                    <strong>Recommandation :</strong> Intégrer progressivement
+                    l'IA dans les workflows tout en maintenant une expertise
+                    humaine pour la validation et la prise de décision
+                    stratégique.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outils de veille utilisés -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto mb-3 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center"
+            >
+              <i class="ri-rss-line text-2xl text-blue-600"></i>
+            </div>
+            <h4 class="font-semibold mb-1">RSS Feeds</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              TechCrunch, Ars Technica
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto mb-3 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center"
+            >
+              <i class="ri-mail-line text-2xl text-green-600"></i>
+            </div>
+            <h4 class="font-semibold mb-1">Newsletters</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              JavaScript Weekly, AI News
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto mb-3 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center"
+            >
+              <i class="ri-twitter-line text-2xl text-purple-600"></i>
+            </div>
+            <h4 class="font-semibold mb-1">Réseaux Sociaux</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Twitter, LinkedIn
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto mb-3 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center"
+            >
+              <i class="ri-book-line text-2xl text-orange-600"></i>
+            </div>
+            <h4 class="font-semibold mb-1">Blogs Tech</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Medium, Dev.to
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-50 dark:bg-dark-800">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-heading font-bold text-center mb-16"
+        >
+          Contact
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- À Propos -->
+          <div>
+            <h3 class="text-2xl font-bold mb-6 flex items-center">
+              <i class="ri-user-line text-primary mr-3"></i>
+              À Propos
+            </h3>
+            <div class="prose prose-gray dark:prose-invert max-w-none">
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Étudiant en BTS SIO option SLAM, je suis passionné par le
+                développement logiciel et l'intelligence artificielle. Mon
+                parcours combine formation académique rigoureuse et expériences
+                pratiques en entreprise.
+              </p>
+
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Rigoureux et autonome, j'aime relever des défis techniques
+                complexes et travailler en équipe. Mon objectif est d'intégrer
+                une entreprise innovante où je pourrai continuer à développer
+                mes compétences tout en contribuant à des projets stimulants.
+              </p>
+
+              <div
+                class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border-l-4 border-blue-500 mb-6"
+              >
+                <h4 class="font-semibold text-blue-800 dark:text-blue-200 mb-2">
+                  Centres d'intérêt
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-full"
+                    >Intelligence Artificielle</span
+                  >
+                  <span
+                    class="px-3 py-1 text-sm bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-full"
+                    >Développement Web</span
+                  >
+                  <span
+                    class="px-3 py-1 text-sm bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded-full"
+                    >Musique</span
+                  >
+                  <span
+                    class="px-3 py-1 text-sm bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 rounded-full"
+                    >Sports de Combat</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div
+                class="flex items-center p-3 bg-gray-50 dark:bg-dark-700 rounded-lg"
+              >
+                <i class="ri-mail-line text-primary mr-3"></i>
+                <div>
+                  <p class="font-medium">Email</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    nohjoseph.nj@gmail.com
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-center p-3 bg-gray-50 dark:bg-dark-700 rounded-lg"
+              >
+                <i class="ri-phone-line text-primary mr-3"></i>
+                <div>
+                  <p class="font-medium">Téléphone</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    +33 7 43 53 49 90
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-center p-3 bg-gray-50 dark:bg-dark-700 rounded-lg"
+              >
+                <i class="ri-map-pin-line text-primary mr-3"></i>
+                <div>
+                  <p class="font-medium">Localisation</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Île-de-France, France
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire de Contact -->
+          <div>
+            <h3 class="text-2xl font-bold mb-6 flex items-center">
+              <i class="ri-mail-send-line text-primary mr-3"></i>
+              Me Contacter
+            </h3>
+
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-gray-700 dark:text-gray-300 mb-2 font-medium"
+                  >Nom *</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-dark-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                  required
+                  placeholder="Votre nom"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-gray-700 dark:text-gray-300 mb-2 font-medium"
+                  >Email *</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-dark-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                  required
+                  placeholder="votre.email@exemple.com"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="subject"
+                  class="block text-gray-700 dark:text-gray-300 mb-2 font-medium"
+                  >Sujet</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-dark-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                  placeholder="Objet de votre message"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-gray-700 dark:text-gray-300 mb-2 font-medium"
+                  >Message *</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-dark-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-vertical"
+                  required
+                  placeholder="Votre message..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-primary hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
+              >
+                <i class="ri-send-plane-line mr-2"></i>
+                Envoyer le Message
+              </button>
+
+              <p class="text-xs text-gray-500 dark:text-gray-400 text-center">
+                * Champs obligatoires. Je m'engage à protéger vos données
+                personnelles.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 border-t border-gray-200 dark:border-gray-700">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-gray-600 dark:text-gray-400 mb-4">
+          © 2024 Nohann Joseph - Portfolio BTS SIO. Tous droits réservés.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-6 text-sm">
+          <span class="text-gray-500 dark:text-gray-400"
+            >Conformité Épreuve E4 - BTS SIO 2024</span
+          >
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+          <p class="text-xs text-gray-500 dark:text-gray-400">
+            Ce portfolio respecte les exigences de l'épreuve E4 du BTS SIO et
+            garantit la traçabilité complète des compétences acquises.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
